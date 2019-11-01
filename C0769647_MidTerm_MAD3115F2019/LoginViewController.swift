@@ -34,7 +34,12 @@ class LoginViewController: UIViewController {
     }
     
     func readInfoPlist() -> Bool{
-       
+        if let bundlePath = Bundle.main.path(forResource: "Users", ofType: "plist") {
+            let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
+            let usersList = dictionary!["Users"] as! NSArray
+            
+           
+            }
             
             
         }
