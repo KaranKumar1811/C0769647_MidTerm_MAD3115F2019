@@ -10,21 +10,69 @@ import UIKit
 
 class AddCustomerDetailViewController: UIViewController {
 
+    @IBOutlet weak var firstNameTxtField: UITextField!
+    
+    @IBOutlet weak var emailTxtField: UITextField!
+    
+    @IBOutlet weak var lastNameTxtField: UITextField!
+    
+    
+    
+    private func saveCustomerButton()
+    {
+        let saveBtn=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddCustomerDetailViewController.saveCustomer(sender:)))
+        
+        navigationItem.rightBarButtonItem=saveBtn
+    }
+    
+    func isValidEmail() -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: emailTxtField.text!)
+    }
+    
+    
+    @objc
+    func saveCustomer(sender: UIBarButtonItem)
+    {
+        
+        let savebutton=UIStoryboard(name: "Main", bundle: nil)
+        let customerListVC=savebutton.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListViewController
+        navigationController?.pushViewController(customerListVC, animated: true)
+        
+        
+        
+        let first_Name = firstNameTxtField.text
+        let last_Name = lastNameTxtField.text
+        
+        if isValidEmail()
+        {
+            
+            let email = emailTxtField.text
+            a1.addNewCustomers(FirstName: first_Name!, LastName: last_Name!, Email: email!)
+            let alert = UIAlertController(title: "Customer Added", message: "Congrats!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else{
+            let alert = UIAlertController(title: "Invalid Email Entered!", message: "Please Enter a Valid Email Address", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            
+        }
+    }
+    
+    
+    let a1 = Singleton.getInstance()
     override func viewDidLoad() {
         super.viewDidLoad()
+        saveCustomerButton()
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
