@@ -29,8 +29,17 @@ class LoginViewController: UIViewController {
             
         }
         
-        
-        
+        else{
+            let alert = UIAlertController(title: "Username Or Password Incorrect", message: "Try Agian !", preferredStyle: .alert)
+            
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: {action
+                in
+                print("OK CLicked")
+            }))
+            self.present(alert, animated: true)
+            print("invalid username or password")
+        }
         
         
         
