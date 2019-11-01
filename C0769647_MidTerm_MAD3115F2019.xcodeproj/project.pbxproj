@@ -19,6 +19,7 @@
 		9B9B2782236CAD3F002CD054 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2781236CAD3F002CD054 /* Customer.swift */; };
 		9B9B2784236CB113002CD054 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B2783236CB113002CD054 /* Users.plist */; };
 		9B9B2786236CC0DA002CD054 /* AddCustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2785236CC0DA002CD054 /* AddCustomerDetailViewController.swift */; };
+		9B9B2788236CD12F002CD054 /* ShowCustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2787236CD12F002CD054 /* ShowCustomerDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9B9B2781236CAD3F002CD054 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B9B2783236CB113002CD054 /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 		9B9B2785236CC0DA002CD054 /* AddCustomerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerDetailViewController.swift; sourceTree = "<group>"; };
+		9B9B2787236CD12F002CD054 /* ShowCustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCustomerDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				9B9B2781236CAD3F002CD054 /* Customer.swift */,
 				9B9B2783236CB113002CD054 /* Users.plist */,
 				9B9B2785236CC0DA002CD054 /* AddCustomerDetailViewController.swift */,
+				9B9B2787236CD12F002CD054 /* ShowCustomerDetailsViewController.swift */,
 			);
 			path = C0769647_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				9B00317D236CA29C00424272 /* LoginViewController.swift in Sources */,
 				9B9B2786236CC0DA002CD054 /* AddCustomerDetailViewController.swift in Sources */,
 				9B9B2782236CAD3F002CD054 /* Customer.swift in Sources */,
+				9B9B2788236CD12F002CD054 /* ShowCustomerDetailsViewController.swift in Sources */,
 				9B9B2780236CA8F7002CD054 /* Singleton.swift in Sources */,
 				9B0031A9236CA43700424272 /* CustomerListViewController.swift in Sources */,
 				9B00317B236CA29C00424272 /* AppDelegate.swift in Sources */,

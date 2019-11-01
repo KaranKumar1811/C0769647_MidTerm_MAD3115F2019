@@ -34,6 +34,15 @@ class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableV
         cells.textLabel?.text = (a?.full_Name)!
         return cells
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rowselect=UIStoryboard(name: "Main", bundle: nil)
+        let detailsVC=rowselect.instantiateViewController(withIdentifier: "detialsOfCustomerVC") as! ShowCustomerDetailsViewController
+        detailsVC.customerdetails=temp.returnCustomerObj(customerID: indexPath.row+1)!
+        navigationController?.pushViewController(detailsVC, animated: true)
+        
+        
+      
+    }
     
     
     
@@ -72,7 +81,7 @@ class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+       
         customerList.delegate=self
         customerList.dataSource=self
         navigationItem.hidesBackButton=true
