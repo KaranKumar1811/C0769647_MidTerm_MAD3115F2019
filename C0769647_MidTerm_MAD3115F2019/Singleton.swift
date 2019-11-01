@@ -9,5 +9,8 @@
 import Foundation
 class Singleton : NSObject
 {
+    private override init() {
+        
+    }
     
 }
