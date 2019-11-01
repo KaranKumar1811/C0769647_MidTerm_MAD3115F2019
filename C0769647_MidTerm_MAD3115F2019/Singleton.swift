@@ -11,7 +11,8 @@ class Singleton : NSObject
 {
     
     private var customerDictionary  = [Int:Customer]()
-    
+    private static var object = Singleton()
+
     private override init() {
         
     }
@@ -28,4 +29,8 @@ class Singleton : NSObject
         let temp = Customer(customer_Id: cust, customer_F_Name: FirstName, customer_L_Name: LastName, customer_Email: Email)
         self.AddCustomer(customer: temp)
     }
+    
+    
+    
+    
 }
