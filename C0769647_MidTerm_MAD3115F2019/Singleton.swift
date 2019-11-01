@@ -9,11 +9,20 @@
 import Foundation
 class Singleton : NSObject
 {
+    
+    private var customerDictionary  = [Int:Customer]()
+    
     private override init() {
         
     }
+    
     internal static func getInstance() -> Singleton
     {
         return object
+    }
+    
+    func addNewCustomers(FirstName : String, LastName : String, Email : String)
+    {
+       
     }
 }
