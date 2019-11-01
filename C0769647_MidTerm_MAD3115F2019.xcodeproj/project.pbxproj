@@ -16,6 +16,7 @@
 		9B00319B236CA29D00424272 /* C0769647_MidTerm_MAD3115F2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B00319A236CA29D00424272 /* C0769647_MidTerm_MAD3115F2019UITests.swift */; };
 		9B0031A9236CA43700424272 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0031A8236CA43700424272 /* CustomerListViewController.swift */; };
 		9B9B2780236CA8F7002CD054 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B277F236CA8F7002CD054 /* Singleton.swift */; };
+		9B9B2782236CAD3F002CD054 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2781236CAD3F002CD054 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9B00319C236CA29D00424272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B0031A8236CA43700424272 /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
 		9B9B277F236CA8F7002CD054 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		9B9B2781236CAD3F002CD054 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				9B003186236CA29D00424272 /* Info.plist */,
 				9B0031A8236CA43700424272 /* CustomerListViewController.swift */,
 				9B9B277F236CA8F7002CD054 /* Singleton.swift */,
+				9B9B2781236CAD3F002CD054 /* Customer.swift */,
 			);
 			path = C0769647_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B00317D236CA29C00424272 /* LoginViewController.swift in Sources */,
+				9B9B2782236CAD3F002CD054 /* Customer.swift in Sources */,
 				9B9B2780236CA8F7002CD054 /* Singleton.swift in Sources */,
 				9B0031A9236CA43700424272 /* CustomerListViewController.swift in Sources */,
 				9B00317B236CA29C00424272 /* AppDelegate.swift in Sources */,

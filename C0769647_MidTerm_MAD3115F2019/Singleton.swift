@@ -26,17 +26,17 @@ class Singleton : NSObject
     {
         let cust = customerDictionary.count+1
         
-        let temp = Customer(customer_Id: cust, customer_F_Name: FirstName, customer_L_Name: LastName, customer_Email: Email)
+        let temp = Customer(customerId: cust, customerFirstName: FirstName, customerLastName: LastName, customerEmail: Email)
         self.addCustomer(customer: temp)
     }
     
     func addCustomer(customer: Customer)
     {
-        customerDictionary.updateValue(customer, forKey: customer.customerID!)
+        customerDictionary.updateValue(customer, forKey: customer.customerId!)
     }
     
     
-    func returnCustomerObj(custID : Int) -> Customer?
+    func returnCustomerObj(customerID : Int) -> Customer?
     {
         for (k,v) in customerDictionary
         {
@@ -56,14 +56,14 @@ class Singleton : NSObject
     
     func createCust()
     {
-        let cust1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
-        AddCustomer(customer: cust1)
-        let cust2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
-        AddCustomer(customer: cust2)
-        let cust3 = Customer(customerID: 3, customerFName: "Karan", customerLName: "Kumar", customerEmail: "karan321@gmail.com ")
-        AddCustomer(customer: cust3)
-        let cust4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ")
-        AddCustomer(customer: cust4)
+        let cust1 = Customer(customerId: 1, customerFirstName: "Sandeep", customerLastName: "Singh", customerEmail: "sandeep123@gmail.com ")
+        addCustomer(customer: cust1)
+        let cust2 = Customer(customerId: 2, customerFirstName: "Ankita", customerLastName: "Jain", customerEmail: "ankita123@gmail.com ")
+        addCustomer(customer: cust2)
+        let cust3 = Customer(customerId: 3, customerFirstName: "Karan", customerLastName: "Kumar", customerEmail: "karan123@gmail.com ")
+        addCustomer(customer: cust3)
+        let cust4 = Customer(customerId: 4, customerFirstName: "Kamal", customerLastName: "Kaur", customerEmail: "kamal123@gmail.com ")
+        addCustomer(customer: cust4)
         
     }
     
