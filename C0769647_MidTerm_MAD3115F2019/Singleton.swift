@@ -36,6 +36,17 @@ class Singleton : NSObject
     }
     
     
-
+    func returnCustomerObj(custID : Int) -> Customer?
+    {
+        for (k,v) in customerDictionary
+        {
+            if customerID == k
+            {
+                return v
+            }
+        }
+        return nil
+        
+    }
     
 }
