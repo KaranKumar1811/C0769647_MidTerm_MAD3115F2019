@@ -142,6 +142,21 @@
             </objects>
             <point key="canvasLocation" x="1663.7681159420292" y="-535.04464285714278"/>
         </scene>
+        <!--Add Customer Detail View Controller-->
+        <scene sceneID="DSj-1G-fZy">
+            <objects>
+                <viewController storyboardIdentifier="addCustDetailVC" id="zra-Hf-wdU" customClass="AddCustomerDetailViewController" customModule="C0769647_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3hp-Vh-782">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wvT-mX-k2g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCq-Jh-fku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2425" y="-535"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="450" height="485"/>

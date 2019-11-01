@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomerListViewController: UIViewController {
+class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     
     
     private func addLogoutButton()
@@ -23,6 +23,25 @@ class CustomerListViewController: UIViewController {
     {
         navigationController?.popViewController(animated: true)
     }
+    
+    
+    private func addCustomerButton()
+    {
+        let btnLogout=UIBarButtonItem(title: "Add Customer", style: .done, target: self, action: #selector(CustomerListViewController.addCustomer(sender:)))
+            navigationItem.rightBarButtonItem=btnLogout
+    }
+    
+    @objc func addCustomer(sender: UIBarButtonItem)
+    {
+        
+        let addbtn=UIStoryboard(name: "Main", bundle: nil)
+        let addBarBtn=addbtn.instantiateViewController(withIdentifier: "addCustDetailVC") as! AddCustomerDetailViewController
+        navigationController?.pushViewController(addBarBtn, animated: true)
+        
+    }
+    
+    var temp = Singleton.getInstance()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
