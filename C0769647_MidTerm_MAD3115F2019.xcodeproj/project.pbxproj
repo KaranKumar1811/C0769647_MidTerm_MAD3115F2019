@@ -17,6 +17,7 @@
 		9B0031A9236CA43700424272 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0031A8236CA43700424272 /* CustomerListViewController.swift */; };
 		9B9B2780236CA8F7002CD054 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B277F236CA8F7002CD054 /* Singleton.swift */; };
 		9B9B2782236CAD3F002CD054 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2781236CAD3F002CD054 /* Customer.swift */; };
+		9B9B2784236CB113002CD054 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B2783236CB113002CD054 /* Users.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9B0031A8236CA43700424272 /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
 		9B9B277F236CA8F7002CD054 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9B9B2781236CAD3F002CD054 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9B9B2783236CB113002CD054 /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				9B0031A8236CA43700424272 /* CustomerListViewController.swift */,
 				9B9B277F236CA8F7002CD054 /* Singleton.swift */,
 				9B9B2781236CAD3F002CD054 /* Customer.swift */,
+				9B9B2783236CB113002CD054 /* Users.plist */,
 			);
 			path = C0769647_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				9B003185236CA29D00424272 /* LaunchScreen.storyboard in Resources */,
 				9B003182236CA29D00424272 /* Assets.xcassets in Resources */,
 				9B003180236CA29C00424272 /* Main.storyboard in Resources */,
+				9B9B2784236CB113002CD054 /* Users.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
