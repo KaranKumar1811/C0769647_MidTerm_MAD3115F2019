@@ -38,7 +38,15 @@ class LoginViewController: UIViewController {
             let dictionary = NSMutableDictionary(contentsOfFile: bundlePath)
             let usersList = dictionary!["Users"] as! NSArray
             
-           
+            for u in usersList
+            {
+                let user = u as! NSDictionary
+                let username = user["username"]! as! String
+                let pwd = user["password"]! as! String
+                if username==usernameTxtField.text! && pwd==passwordTxtField.text!
+                {
+                    return true
+                }
             }
             
             
