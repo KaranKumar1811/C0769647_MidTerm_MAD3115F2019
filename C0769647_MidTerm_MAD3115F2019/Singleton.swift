@@ -27,10 +27,15 @@ class Singleton : NSObject
         let cust = customerDictionary.count+1
         
         let temp = Customer(customer_Id: cust, customer_F_Name: FirstName, customer_L_Name: LastName, customer_Email: Email)
-        self.AddCustomer(customer: temp)
+        self.addCustomer(customer: temp)
+    }
+    
+    func addCustomer(customer: Customer)
+    {
+        customerDictionary.updateValue(customer, forKey: customer.customerID!)
     }
     
     
-    
+
     
 }
