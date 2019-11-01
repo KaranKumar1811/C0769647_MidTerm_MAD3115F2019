@@ -11,6 +11,32 @@ import UIKit
 class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     
     
+    
+    
+    
+    
+    @IBOutlet weak var customerList: UITableView!
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Customer List !"
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return temp.returnCount()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let a = temp.returnCustomerObj(customerID: Int(indexPath.row+1))
+        let cells = tableView.dequeueReusableCell(withIdentifier: "CustCell", for: indexPath)
+        cells.textLabel?.text? = a!.full_Name
+        return cells
+    }
+    
+    
+    
     private func addLogoutButton()
     {
         let LogoutBtn=UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListViewController.logout(sender:)))
@@ -47,9 +73,18 @@ class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableV
         super.viewDidLoad()
         
         
+        customerList.delegate=self
+        customerList.dataSource=self
+        navigationItem.hidesBackButton=true
+        addLogoutButton()
+        addCustomerButton()
+        
+        
     }
    
-    
+    override func viewWillAppear(_ animated: Bool) {
+        customerList.reloadData()
+    }
       
 
 }
