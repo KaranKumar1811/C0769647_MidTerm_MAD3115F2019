@@ -53,4 +53,18 @@ class Singleton : NSObject
         return customerDictionary.count
     }
     
+    
+    func createCust()
+    {
+        let cust1 = Customer(customerID: 1, customerFName: "Ankita", customerLName: "Jain", customerEmail: "ankita@gmail.com ")
+        AddCustomer(customer: cust1)
+        let cust2 = Customer(customerID: 2, customerFName: "kamal", customerLName: "kaur", customerEmail: "kamal@gmail.com ")
+        AddCustomer(customer: cust2)
+        let cust3 = Customer(customerID: 3, customerFName: "Karan", customerLName: "Kumar", customerEmail: "karan321@gmail.com ")
+        AddCustomer(customer: cust3)
+        let cust4 = Customer(customerID: 4, customerFName: "Sandeep", customerLName: "Singh", customerEmail: "sandeep@gmail.com ")
+        AddCustomer(customer: cust4)
+        
+    }
+    
 }
