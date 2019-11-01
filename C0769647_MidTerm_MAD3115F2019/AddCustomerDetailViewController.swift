@@ -39,7 +39,7 @@ class AddCustomerDetailViewController: UIViewController {
         
         let savebutton=UIStoryboard(name: "Main", bundle: nil)
         let customerListVC=savebutton.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListViewController
-        navigationController?.pushViewController(customerListVC, animated: true)
+        navigationController?.popViewController(animated: true)
         
         
         
