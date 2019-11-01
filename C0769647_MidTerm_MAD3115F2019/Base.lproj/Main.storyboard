@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0769647_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="anp-23-4z3"/>
+                    <navigationItem key="navigationItem" title="Login" id="anp-23-4z3"/>
                     <connections>
                         <outlet property="passwordTxtField" destination="jxZ-yz-t4D" id="CfF-Ep-43l"/>
                         <outlet property="usernameTxtField" destination="Moc-z8-Qff" id="FWV-YH-ICa"/>
@@ -108,7 +108,7 @@
         <!--Customer List View Controller-->
         <scene sceneID="NVu-vT-A1N">
             <objects>
-                <viewController storyboardIdentifier="CustomerListVC" id="QXY-OH-Df5" customClass="CustomerListViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomerListVC" id="QXY-OH-Df5" customClass="CustomerListViewController" customModule="C0769647_MidTerm_MAD3115F2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EUY-tl-hR5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
