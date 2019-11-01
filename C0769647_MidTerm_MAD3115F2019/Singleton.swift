@@ -54,7 +54,7 @@ class Singleton : NSObject
     }
     
     
-    func createCust()
+    func createCustomer()
     {
         let cust1 = Customer(customerId: 1, customerFirstName: "Sandeep", customerLastName: "Singh", customerEmail: "sandeep123@gmail.com ")
         addCustomer(customer: cust1)
