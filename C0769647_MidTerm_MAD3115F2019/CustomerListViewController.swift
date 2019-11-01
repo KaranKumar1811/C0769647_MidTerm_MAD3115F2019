@@ -31,7 +31,7 @@ class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let a = temp.returnCustomerObj(customerID: Int(indexPath.row+1))
         let cells = tableView.dequeueReusableCell(withIdentifier: "CustCell", for: indexPath)
-        cells.textLabel?.text? = a!.full_Name
+        cells.textLabel?.text = (a?.full_Name)!
         return cells
     }
     
