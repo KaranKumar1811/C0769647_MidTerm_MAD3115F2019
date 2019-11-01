@@ -12,5 +12,8 @@ class Singleton : NSObject
     private override init() {
         
     }
-    
+    internal static func getInstance() -> Singleton
+    {
+        return object
+    }
 }
