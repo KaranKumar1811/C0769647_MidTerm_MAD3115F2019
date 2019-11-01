@@ -130,18 +130,7 @@
                                 <rect key="frame" x="0.0" y="36" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Customer List" id="9jg-ww-kdg">
-                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ydF-od-NDS">
-                                            <connections>
-                                                <action selector="logoutBarButtton:" destination="QXY-OH-Df5" id="9RF-9O-J6V"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Add" id="276-ei-Imp">
-                                            <connections>
-                                                <action selector="addCustomerBarBtn:" destination="QXY-OH-Df5" id="f1b-Xt-yx4"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Customer List" id="9jg-ww-kdg"/>
                                 </items>
                             </navigationBar>
                         </subviews>

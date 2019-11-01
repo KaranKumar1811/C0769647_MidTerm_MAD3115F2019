@@ -10,10 +10,18 @@ import UIKit
 
 class CustomerListViewController: UIViewController {
     
-    @IBAction func addCustomerBarBtn(_ sender: UIBarButtonItem) {
+    
+    private func addLogoutButton()
+    {
+        let LogoutBtn=UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(CustomerListViewController.logout(sender:)))
+        
+        navigationItem.leftBarButtonItem=LogoutBtn
     }
     
-    @IBAction func logoutBarButtton(_ sender: UIBarButtonItem) {
+    
+    @objc func logout(sender: UIBarButtonItem)
+    {
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
