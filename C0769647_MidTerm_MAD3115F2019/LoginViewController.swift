@@ -12,7 +12,8 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginBtn(_ sender: UIButton) {
-       
+        let clvc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CustomerListVC")
+        self.navigationController?.pushViewController(clvc, animated: true)
     }
     
     @IBOutlet weak var passwordTxtField: UITextField!
