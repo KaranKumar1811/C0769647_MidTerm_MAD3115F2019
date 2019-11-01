@@ -20,15 +20,25 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameTxtField: UITextField!
     
+    var userDefault : UserDefaults!
+    
     @IBAction func rememberMeSwitch(_ sender: UISwitch) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let getdata =  Singleton.getInstance()
+        getdata.createCustomer()
+        userDefault = UserDefaults.standard
+        
     }
     
-    
+    func readInfoPlist() -> Bool{
+       
+            
+            
+        }
+        return false    }
     
     
     
