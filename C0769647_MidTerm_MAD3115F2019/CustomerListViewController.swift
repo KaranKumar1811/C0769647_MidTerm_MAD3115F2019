@@ -15,7 +15,10 @@ class CustomerListViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-  
+    private func addCustomerBtn()
+    {
+        //        let btnAddCustomer = UIBarButtonItem(title: "Add Customer", style: .done, target: self, action: #selector(CustomerListViewController))
+    }
     
 
     /*
