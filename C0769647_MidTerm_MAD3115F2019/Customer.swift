@@ -16,8 +16,21 @@ class Customer
         return customer_F_Name! + " " + customer_L_Name!
     }
     var customer_Email: String?
+    var billDictionary = [Int:Bill]()
     
-    var totalBillAmount : Float?
+    var totalBillAmout: Float
+    {
+        var TotalAmount: Float = 0.0
+        
+        for bill in billDictionary
+        {
+            TotalAmount = TotalAmount + bill.value.totalBillAmount
+        }
+        return TotalAmount
+    }
+    func addBill(Bill: Bill) {
+        billDictionary.updateValue(Bill, forKey: Bill.Id)
+    }
     
     init(customerId:Int,customerFirstName: String,customerLastName:String,customerEmail:String) {
         self.customerId=customerId

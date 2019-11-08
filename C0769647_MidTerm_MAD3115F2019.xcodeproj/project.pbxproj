@@ -20,6 +20,15 @@
 		9B9B2784236CB113002CD054 /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B2783236CB113002CD054 /* Users.plist */; };
 		9B9B2786236CC0DA002CD054 /* AddCustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2785236CC0DA002CD054 /* AddCustomerDetailViewController.swift */; };
 		9B9B2788236CD12F002CD054 /* ShowCustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B2787236CD12F002CD054 /* ShowCustomerDetailsViewController.swift */; };
+		9BAC7B9923760ED8007E3053 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7B9823760ED8007E3053 /* Bill.swift */; };
+		9BAC7B9D23760F20007E3053 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7B9A23760F20007E3053 /* Hydro.swift */; };
+		9BAC7B9E23760F20007E3053 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7B9B23760F20007E3053 /* Internet.swift */; };
+		9BAC7B9F23760F20007E3053 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7B9C23760F20007E3053 /* Mobile.swift */; };
+		9BAC7BA723761415007E3053 /* Extension_Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7BA323761415007E3053 /* Extension_Float.swift */; };
+		9BAC7BA823761415007E3053 /* Extension_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7BA423761415007E3053 /* Extension_Date.swift */; };
+		9BAC7BA923761415007E3053 /* Extension_Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7BA523761415007E3053 /* Extension_Int.swift */; };
+		9BAC7BAA23761415007E3053 /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7BA623761415007E3053 /* Extension_String.swift */; };
+		9BAC7BAC23761D14007E3053 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC7BAB23761D14007E3053 /* AddNewBillViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +68,15 @@
 		9B9B2783236CB113002CD054 /* Users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 		9B9B2785236CC0DA002CD054 /* AddCustomerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerDetailViewController.swift; sourceTree = "<group>"; };
 		9B9B2787236CD12F002CD054 /* ShowCustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCustomerDetailsViewController.swift; sourceTree = "<group>"; };
+		9BAC7B9823760ED8007E3053 /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		9BAC7B9A23760F20007E3053 /* Hydro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9BAC7B9B23760F20007E3053 /* Internet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		9BAC7B9C23760F20007E3053 /* Mobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		9BAC7BA323761415007E3053 /* Extension_Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_Float.swift; sourceTree = "<group>"; };
+		9BAC7BA423761415007E3053 /* Extension_Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_Date.swift; sourceTree = "<group>"; };
+		9BAC7BA523761415007E3053 /* Extension_Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_Int.swift; sourceTree = "<group>"; };
+		9BAC7BA623761415007E3053 /* Extension_String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
+		9BAC7BAB23761D14007E3053 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +127,7 @@
 		9B003179236CA29C00424272 /* C0769647_MidTerm_MAD3115F2019 */ = {
 			isa = PBXGroup;
 			children = (
+				9BAC7BA223761415007E3053 /* Extensions */,
 				9B00317A236CA29C00424272 /* AppDelegate.swift */,
 				9B00317C236CA29C00424272 /* LoginViewController.swift */,
 				9B00317E236CA29C00424272 /* Main.storyboard */,
@@ -121,6 +140,11 @@
 				9B9B2783236CB113002CD054 /* Users.plist */,
 				9B9B2785236CC0DA002CD054 /* AddCustomerDetailViewController.swift */,
 				9B9B2787236CD12F002CD054 /* ShowCustomerDetailsViewController.swift */,
+				9BAC7B9823760ED8007E3053 /* Bill.swift */,
+				9BAC7B9C23760F20007E3053 /* Mobile.swift */,
+				9BAC7B9A23760F20007E3053 /* Hydro.swift */,
+				9BAC7B9B23760F20007E3053 /* Internet.swift */,
+				9BAC7BAB23761D14007E3053 /* AddNewBillViewController.swift */,
 			);
 			path = C0769647_MidTerm_MAD3115F2019;
 			sourceTree = "<group>";
@@ -141,6 +165,17 @@
 				9B00319C236CA29D00424272 /* Info.plist */,
 			);
 			path = C0769647_MidTerm_MAD3115F2019UITests;
+			sourceTree = "<group>";
+		};
+		9BAC7BA223761415007E3053 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC7BA323761415007E3053 /* Extension_Float.swift */,
+				9BAC7BA423761415007E3053 /* Extension_Date.swift */,
+				9BAC7BA523761415007E3053 /* Extension_Int.swift */,
+				9BAC7BA623761415007E3053 /* Extension_String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,13 +310,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAC7B9923760ED8007E3053 /* Bill.swift in Sources */,
+				9BAC7BA923761415007E3053 /* Extension_Int.swift in Sources */,
 				9B00317D236CA29C00424272 /* LoginViewController.swift in Sources */,
 				9B9B2786236CC0DA002CD054 /* AddCustomerDetailViewController.swift in Sources */,
 				9B9B2782236CAD3F002CD054 /* Customer.swift in Sources */,
+				9BAC7BA823761415007E3053 /* Extension_Date.swift in Sources */,
+				9BAC7B9E23760F20007E3053 /* Internet.swift in Sources */,
+				9BAC7B9D23760F20007E3053 /* Hydro.swift in Sources */,
+				9BAC7BA723761415007E3053 /* Extension_Float.swift in Sources */,
+				9BAC7B9F23760F20007E3053 /* Mobile.swift in Sources */,
 				9B9B2788236CD12F002CD054 /* ShowCustomerDetailsViewController.swift in Sources */,
 				9B9B2780236CA8F7002CD054 /* Singleton.swift in Sources */,
 				9B0031A9236CA43700424272 /* CustomerListViewController.swift in Sources */,
 				9B00317B236CA29C00424272 /* AppDelegate.swift in Sources */,
+				9BAC7BAC23761D14007E3053 /* AddNewBillViewController.swift in Sources */,
+				9BAC7BAA23761415007E3053 /* Extension_String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

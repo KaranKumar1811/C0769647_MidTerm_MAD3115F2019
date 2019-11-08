@@ -21,8 +21,9 @@ class AddCustomerDetailViewController: UIViewController {
     private func saveCustomerButton()
     {
         let saveBtn=UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(AddCustomerDetailViewController.saveCustomer(sender:)))
-        
+    
         navigationItem.rightBarButtonItem=saveBtn
+        
     }
     
     func isValidEmail() -> Bool {
@@ -39,7 +40,7 @@ class AddCustomerDetailViewController: UIViewController {
         
         let savebutton=UIStoryboard(name: "Main", bundle: nil)
         let customerListVC=savebutton.instantiateViewController(withIdentifier: "CustomerListVC") as! CustomerListViewController
-        navigationController?.popViewController(animated: true)
+        
         
         
         
@@ -52,7 +53,9 @@ class AddCustomerDetailViewController: UIViewController {
             let email = emailTxtField.text
             a1.addNewCustomers(FirstName: first_Name!, LastName: last_Name!, Email: email!)
             let alert = UIAlertController(title: "Customer Added", message: "Congrats!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(alert:UIAlertAction!) in self.navigationController?.popViewController(animated: true)
+                
+            }))
             self.present(alert, animated: true)
         }
         else{
