@@ -62,8 +62,8 @@ class CustomerListViewController: UIViewController ,UITableViewDelegate,UITableV
     
     private func addCustomerButton()
     {
-        let btnLogout=UIBarButtonItem(title: "Add Customer", style: .done, target: self, action: #selector(CustomerListViewController.addCustomer(sender:)))
-            navigationItem.rightBarButtonItem=btnLogout
+        let btnAddCustomer=UIBarButtonItem(title: "Add Customer", style: .done, target: self, action: #selector(CustomerListViewController.addCustomer(sender:)))
+            navigationItem.rightBarButtonItem=btnAddCustomer
     }
     
     @objc func addCustomer(sender: UIBarButtonItem)

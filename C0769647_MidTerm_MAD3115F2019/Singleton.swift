@@ -57,41 +57,56 @@ class Singleton : NSObject
     
     func createCustomer()
     {
-        let I1 = Internet(Id: 10, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 23.43, providerName: "Bell", internetUsed: 232)
-        let M1: Mobile = Mobile(Id: 1, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 74.52, mobileManufacturer: "Samsung S10", planName: "Talk + Data", mobileNumber: "+12345678901", internetUsed: 23, minuteUsed: 34)
-        let M2: Mobile = Mobile(Id: 2, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 34.98, mobileManufacturer: "LG", planName: "LTE+3G 9.5GB Promo plan", mobileNumber: "+14567431985", internetUsed: 67, minuteUsed: 456)
+       
+       
         
-        let I3: Internet = Internet(Id: 1, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 23.09, providerName: "Bell", internetUsed: 34)
-        let I4: Internet = Internet(Id: 2, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 236.09, providerName: "Rogers", internetUsed: 765)
+       
         
-        let H5: Hydro = Hydro(Id: 1, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 765.98, agencyName: "Planet Energy", unitconsumed: 56)
-        let H6: Hydro = Hydro(Id: 2, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 476.8, agencyName: "Energizer", unitconsumed: 98)
+       
+       
         
+        
+        
+        
+       
         let cust1 = Customer(customerId: 1, customerFirstName: "Sandeep", customerLastName: "Singh", customerEmail: "sandeep123@gmail.com ")
+         let M1: Mobile = Mobile(Id: 1, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 123.34, mobileManufacturer: "Samsung Note 10+", planName: "BigGig", mobileNumber: "+1234567890", internetUsed: 33, minuteUsed: 45)
+        let H1: Hydro = Hydro(Id: 2, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 234.35, agencyName: "Toronto Hydro", unitconsumed: 234)
+         let I1 = Internet(Id: 3, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 253.34, providerName: "HomeNet", internetUsed: 232)
         addCustomer(customer: cust1)
         cust1.addBill(Bill: M1)
-        cust1.addBill(Bill: H6)
-       // cust1.addBill(Bill: I3)
+        cust1.addBill(Bill: H1)
+        cust1.addBill(Bill: I1)
+        
+        
         let cust2 = Customer(customerId: 2, customerFirstName: "Ankita", customerLastName: "Jain", customerEmail: "ankita123@gmail.com ")
+        let H2: Hydro = Hydro(Id: 1, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 344, agencyName: "Gta Energy", unitconsumed: 345)
+         let M2: Mobile = Mobile(Id: 2, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 535.6, mobileManufacturer: "Apple", planName: "Gig Talk + Net", mobileNumber: "+1234567890", internetUsed: 234, minuteUsed: 657)
+         let I2: Internet = Internet(Id: 3, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 456.56, providerName: "DataBoss", internetUsed: 453)
         addCustomer(customer: cust2)
-       // cust2.addBill(Bill: I3)
-        cust2.addBill(Bill: I4)
-        cust2.addBill(Bill: M1)
+        cust2.addBill(Bill: H2)
+        cust2.addBill(Bill: M2)
+        cust2.addBill(Bill: I2)
+       
+        
         
         let cust3 = Customer(customerId: 3, customerFirstName: "Karan", customerLastName: "Kumar", customerEmail: "karan123@gmail.com ")
         addCustomer(customer: cust3)
-        cust3.addBill(Bill: I4)
-        cust3.addBill(Bill: M1)
-        cust3.addBill(Bill: H6)
+        
+         let H3: Hydro = Hydro(Id: 1, billDate: Date(), billType: billTypes.Hydro, totalBillAmount: 344, agencyName: "Gta Energy", unitconsumed: 345)
+         let I3: Internet = Internet(Id: 2, billDate: Date(), billType: billTypes.Internet, totalBillAmount: 234.42, providerName: "Jio", internetUsed: 356)
+            cust3.addBill(Bill: H3)
+            cust3.addBill(Bill: I3)
+       
         
         let cust4 = Customer(customerId: 4, customerFirstName: "Kamal", customerLastName: "Kaur", customerEmail: "kamal123@gmail.com ")
         addCustomer(customer: cust4)
         
-        cust4.addBill(Bill: M1)
-        cust4.addBill(Bill: M2)
-      //  cust4.addBill(Bill: I3)
-       // cust4.addBill(Bill: I4)
-        //cust4.addBill(Bill: H6)
+        let M4: Mobile = Mobile(Id: 1, billDate: Date(), billType: billTypes.Mobile, totalBillAmount: 234, mobileManufacturer: "Mi", planName: "Miui", mobileNumber: "+1234567899", internetUsed: 78, minuteUsed: 435)
+        
+       cust4.addBill(Bill: M4)
+        
+
         
       
        

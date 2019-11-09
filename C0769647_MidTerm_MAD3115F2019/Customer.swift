@@ -32,6 +32,16 @@ class Customer
         billDictionary.updateValue(Bill, forKey: Bill.Id)
     }
     
+    init()
+    {
+        self.customerId = Int()
+        self.customer_F_Name = String()
+        self.customer_L_Name = String()
+        self.customer_Email = String()
+    }
+    
+    
+    
     init(customerId:Int,customerFirstName: String,customerLastName:String,customerEmail:String) {
         self.customerId=customerId
         self.customer_F_Name=customerFirstName

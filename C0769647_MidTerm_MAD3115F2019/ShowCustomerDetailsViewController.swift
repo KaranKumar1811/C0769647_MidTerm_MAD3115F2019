@@ -13,6 +13,7 @@ class ShowCustomerDetailsViewController: UIViewController,UITableViewDelegate,UI
     var customerdetails:Customer?=nil
     @IBOutlet weak var idView: UILabel!
     @IBOutlet weak var firstNameView: UILabel!
+    @IBOutlet weak var totalAmountView: UILabel!
     @IBOutlet weak var lastNameView: UILabel!
     @IBOutlet weak var emailView: UILabel!
     @IBOutlet weak var billListTable: UITableView!
@@ -23,18 +24,31 @@ class ShowCustomerDetailsViewController: UIViewController,UITableViewDelegate,UI
         firstNameView.text=customerdetails?.customer_F_Name
         lastNameView.text=customerdetails?.customer_L_Name
         emailView.text=customerdetails?.customer_Email
-        
+        totalAmountView.text="\(String(describing: customerdetails!.totalBillAmout.currency()))"
+        addBillButton()
         self.billListTable.delegate=self
         self.billListTable.dataSource=self
-        let rightButton = UIBarButtonItem(title: "Add Bill", style: UIBarButtonItem.Style.plain, target: self, action: #selector( self.goToAddBill))
-        self.navigationItem.rightBarButtonItem = rightButton
+        
         
     }
     let addBillBtn = UIBarButtonItem()
     
-    @objc func goToAddBill(){
-        self.performSegue(withIdentifier: "addBillVC", sender: nil)
-    }
+     
+     private func addBillButton()
+     {
+         let btnAddBill=UIBarButtonItem(title: "Add Bill", style: .done, target: self, action: #selector(ShowCustomerDetailsViewController.addBill(sender:)))
+             navigationItem.rightBarButtonItem=btnAddBill
+     }
+     
+     @objc func addBill(sender: UIBarButtonItem)
+     {
+         
+         let addBillbtn=UIStoryboard(name: "Main", bundle: nil)
+         let addBarBtn=addBillbtn.instantiateViewController(withIdentifier: "addBillViewContoller") as! AddNewBillViewController
+         navigationController?.pushViewController(addBarBtn, animated: true)
+         
+     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ((customerdetails?.billDictionary.count)!)
@@ -65,7 +79,9 @@ class ShowCustomerDetailsViewController: UIViewController,UITableViewDelegate,UI
         return cell
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        billListTable.reloadData()
+    }
     
 
 }
